@@ -61,16 +61,21 @@
                 <span class="h1 align-middle">Eveline-R</span> - Feel the Freedom
             </p>
             <hr class="col-12">
-            <p class="col-12 lead"><em>Scopri le desitinazioni più calde del momento!</em></p>
-            <button type="button" class="btn btn-info text-white col-2">Prenota ora</button>
+            <p class="col-12 lead"><em>Scopri le destinazioni più calde del momento!</em></p>
+            <button type="button" class="btn btn-info text-white col-3 col-lg-2">Prenota
+                ora</button>
         </div>
 
         <!-- SALDI -->
-        <div class="d-flex justify-content-between align-items-center mt-5">
-            <p class="h2">Saldi</p>
-            <p>Nascondi sezione</p>
+        <div class="d-flex justify-content-between align-items-center mt-4 mb-1">
+            <p class="h2 d-lg-inline-block">Saldi</p>
+            <a class="text-decoration-none" data-bs-toggle="collapse" href="#saldi" role="button"
+                aria-expanded="false" aria-controls="saldi">
+                Nascondi sezione
+            </a>
         </div>
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 collapse show" id="saldi">
             <div class="col">
                 <div class="card border border-info rounded">
                     <img src="https://www.theholidaytown.com/wp-content/uploads/2020/11/m2.jpg"
@@ -123,11 +128,16 @@
 
         <!-- WELCOME SUMMER -->
 
-        <div class="d-flex justify-content-between align-items-center mt-5">
-            <p class="h2">Welcome Summer</p>
-            <p class="small">Nascondi sezione</p>
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-1">
+            <p class="h2 d-lg-inline-block">Welcome Summer</p>
+            <a class="text-decoration-none" data-bs-toggle="collapse" href="#welcomeSummer"
+                role="button" aria-expanded="false" aria-controls="welcomeSummer">
+                Nascondi sezione
+            </a>
         </div>
-        <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 gy-3">
+
+        <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 gy-3 collapse show"
+            id="welcomeSummer">
             <div class="col">
                 <div class="card border border-info rounded shadow-lg">
                     <img src="https://www.theholidaytown.com/wp-content/uploads/2020/11/m2.jpg"
@@ -298,19 +308,24 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
     <footer class="bg-dark">
         <div class="container">
             <div class="row justify-content-center">
                 <button type="button"
-                    class="my-5 btn btn-dark btn-lg btn-outline-secondary col-2">Contattaci</button>
-                <p class="text-white text-center">&copy; 2021 Kalina Travel LTD. All Rigts Reserved
+                    class="my-5 btn btn-dark btn-lg btn-outline-secondary col-3 col-md-2">Contattaci</button>
+                <p class="text-white text-center col-12">&copy; 2021 Kalina Travel LTD. All Rigts
+                    Reserved
                 </p>
             </div>
         </div>
     </footer>
 
-    <script sr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 </body>
 
