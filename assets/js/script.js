@@ -11,6 +11,15 @@ const deleteCardsBtn = document.getElementById("deleteCardsBtn");
 
 deleteCardsBtn.addEventListener("click", function () {
   deleteCards();
+  switch (deleteCardsBtn.innerText) {
+    case "Cancella le card":
+      deleteCardsBtn.innerText = "Mostra le card";
+      break;
+
+    case "Mostra le card":
+      deleteCardsBtn.innerText = "Cancella le card";
+      break;
+  }
 });
 
 const viaggi = document.querySelectorAll(".viaggio");
