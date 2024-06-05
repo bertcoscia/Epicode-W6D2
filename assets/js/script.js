@@ -24,3 +24,20 @@ const contaViaggi = () => {
 contaViaggiBtn.addEventListener("click", function () {
   contaViaggi();
 });
+
+const nascondiSezioneBtn = document.querySelectorAll(".nascondi-sezione");
+
+const arrayNascondiSezioneBtn = Array.from(nascondiSezioneBtn);
+arrayNascondiSezioneBtn.forEach((currentButton) => {
+  currentButton.addEventListener("click", function () {
+    switch (currentButton.innerText) {
+      case "Nascondi sezione":
+        currentButton.innerText = "Mostra sezione";
+        break;
+
+      case "Mostra sezione":
+        currentButton.innerText = "Nascondi sezione";
+        break;
+    }
+  });
+});
